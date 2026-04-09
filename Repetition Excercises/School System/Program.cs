@@ -90,16 +90,11 @@ namespace Repetition_Excercises
                             running = false;
                             break;
                         }
-
-
-
                 }
-                // TODO: switch eller if-else der kalder de relevante metoder 
-                // TODO: Brug ReadNumber() og ReadText() hjaelpemetoder 
-                // TODO: Valider input med if-saetninger
             }
             Console.WriteLine("Goodbye!");
         }
+
         static string ReadText(string prompt)
         {
             Console.WriteLine(prompt);
@@ -112,8 +107,8 @@ namespace Repetition_Excercises
             }
 
             return Console.ReadLine() ?? string.Empty;
-
         }
+
         static int ReadNumber(string prompt)
         {
 
@@ -131,7 +126,6 @@ namespace Repetition_Excercises
             // Valider at input er et gyldigt tal
         }
     }
-
 }
 
 
