@@ -4,13 +4,23 @@
     {
         static void Main(string[] args)
         {
-            Product product1 = new Product("Laptop", 999.99);
+            List<IPrintable> products = new List<IPrintable>()
+            {
+                new Product("Laptop", 999.99),
+                new Product("Tower PC", 1999.99),
+                new Product("Smartphone", 499.99),
+                new Product("Tablet", 299.99)
+            };
 
-            Console.WriteLine(product1.ToText());
+            PrintAll(products);
 
-            bool searchTest = product1.Contains("lap");
-
-            Console.WriteLine(searchTest);
+            static void PrintAll(List<IPrintable> items)
+            {
+                foreach (var product in items)
+                {
+                    Console.WriteLine(product.ToText());
+                }
+            }
         }
 
     }
