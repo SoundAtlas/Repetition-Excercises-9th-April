@@ -16,9 +16,9 @@
 
             static void PrintAll(List<IPrintable> items)
             {
-                foreach (var product in items)
+                foreach (IPrintable item in items)
                 {
-                    Console.WriteLine(product.ToText());
+                    Console.WriteLine(item.ToText());
                 }
             }
         }
